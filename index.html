@@ -146,7 +146,7 @@
     <---- 달력 ---->
 </div>
 
-<div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
+<div style="text-align: center;margin-bottom: 40px;">
     <div style="margin: 20px 0px 40px;text-align: center;">
         <span style="color: rgb(161, 213, 142);font-size: 0.7rem;font-weight: 300;">Contact Info</span>
         <p style="color: rgb(119, 163, 108);margin-top: 5px;font-size: 1.5rem;font-weight: 700;">오시는 길</p>
@@ -217,6 +217,14 @@
         };
 
         var map = new kakao.maps.Map(container, options);
+
+        // 지도를 클릭한 위치에 표출할 마커입니다
+        var marker = new kakao.maps.Marker({
+            // 지도 중심좌표에 마커를 생성합니다
+            position: map.getCenter()
+        });
+        // 지도에 마커를 표시합니다
+        marker.setMap(map);
     </script>
 </body>
 </html>
