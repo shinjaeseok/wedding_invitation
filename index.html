@@ -15,6 +15,7 @@
             src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
             integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=677076f7f85c7003b715ff76ded47403"></script>
     <style>
         @font-face {
             font-family: 'Cafe24Oneprettynight';
@@ -54,9 +55,6 @@
             text-align: left;
             margin-right: 5px;
         }
-
-
-        }
         .bank-slide {
             width: 100%;
             margin-top: 30px;
@@ -82,13 +80,27 @@
             -webkit-box-align: center;
             align-items: center;
         }
+        .footer {
+            display: flex;
+            width: 100%;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            color: rgb(136, 136, 136);
+            text-align: center;
+            position: fixed;
+            max-width: 460px;
+            bottom: 15px;
+            z-index: 9999;
+        }
     </style>
 
 </head>
 <body style="max-width: 460px;margin: 0px auto;">
     <div class="row col-lg-12 menu_bar">
         <div class="col-lg-4 nav">
-                <span>재석 &#x2764; 아현</span>
+                <span>재석 ♥ 아현</span>
         </div>
         <div class="css-1mzjumz">|</div>
         <div class="col-lg-4 nav">
@@ -100,8 +112,8 @@
         </div>
     </div>
 
-<div>
-    사진 이미지
+<div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
+    <---- 대표사진 ---->
 </div>
 <div>
     <div style="margin: 20px 0px 40px;text-align: center;">
@@ -115,7 +127,7 @@
         <p style="display: block;margin-bottom: 10px;">저희 두 사람이</p>
         <p style="display: block;margin-bottom: 10px;">단단한 마음으로 지켜나갈 수 있게</p>
         <p style="display: block;margin-bottom: 10px;">앞날을 축복해 주세요.</p>
-        <p style="display: block;margin-bottom: 10px;">감사합니다.</p>
+        <p style="display: block;margin-bottom: 10px;">고맙습니다.</p>
     </div>
 
 
@@ -142,13 +154,16 @@
 </div>
 
 <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
-    <---- 지도 ---->
+    <div style="text-align: center;margin-bottom: 40px;">
+        <div id="map" style="width:500px;height:400px;"></div>
+        <span style="font-size: 0.7rem;color: rgb(102, 102, 102);">지도를 클릭하시면 카카오 맵으로 연결됩니다</span>
+    </div>
 </div>
 
 <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
     <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);">22년 6월 18일 토요일 오전 10시</p>
-    <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);"><span class="point">아리아나 호텔</span></p>
-    <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);">아리아나홀</p>
+    <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);"><span style="color: rgb(88, 120, 80);">아리아나 호텔</span></p>
+    <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);">2층 아리아나홀</p>
     <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);"><a href="tel:+82537668900">053) 766-8900</a></p>
     <p style="font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);">대구 수성구 동대구로 27</p>
 </div>
@@ -171,26 +186,36 @@
     <div class="bank-slide" open="">
         <div style="margin-top: 20px;margin-bottom: 10px;">신랑측</div>
         <div class="bank">
-            <p style="margin: 5px 0 0 5px;">국민은행 62970204087215 (신재석)</p>
+            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (신문조)</p>
             <button class="copy_btn">복사하기</button>
         </div>
         <div class="bank">
-            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (신문조)</p>
+            <p style="margin: 5px 0 0 5px;">국민은행 62970204087215 (신재석)</p>
             <button class="copy_btn">복사하기</button>
         </div>
 
         <div style="margin-top: 20px;margin-bottom: 5px;">신부측</div>
         <div class="bank">
-            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (김아현)</p>
+            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (추현정)</p>
             <button class="copy_btn">복사하기</button>
         </div>
         <div class="bank">
-            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (추현정)</p>
+            <p style="margin: 5px 0 0 5px;">한국은행 123412341234 (김아현)</p>
             <button class="copy_btn">복사하기</button>
         </div>
     </div>
 </div>
 
+    <div class="footer">재석 ♥ 아현 all rights reserved</div>
 
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
 </body>
 </html>
