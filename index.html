@@ -24,27 +24,46 @@
         }
 
         body{ font-family:Cafe24Oneprettynight }
+
+        .menu_bar {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .nav {
+            width: 20%;
+            font-size: 1.3rem;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            background: rgba(200, 200, 200, 0);
+            border-radius: 5px;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        }
     </style>
 
 </head>
 <body>
-<div class="row">
-    <div class="col-lg-4">
-        <div style="padding-top:25px;">
-            <span>재석 &#x2764; 아현</span>
+    <div class="row col-lg-12 menu_bar">
+        <div class="col-lg-4 nav">
+                <span>재석 &#x2764; 아현</span>
         </div>
-    </div>|
-    <div class="col-lg-4">
-        <div style="padding-top:25px;">
-            <span>오시는길</span>
+        <div class="css-1mzjumz">|</div>
+        <div class="col-lg-4 nav">
+                <span>오시는길</span>
         </div>
-    </div>|
-    <div class="col-lg-4">
-        <div style="padding-top:25px;">
-            <span>연락처</span>
+        <div class="css-1mzjumz">|</div>
+        <div class="col-lg-4 nav">
+                <span>연락처</span>
         </div>
     </div>
-</div>
+
+
 
 </body>
 </html>
