@@ -36,6 +36,9 @@ body{
     color: rgb(119, 163, 108);margin-top: 5px;font-size: 1.5rem;font-weight: 700;
 }
 
+.bold_4 {
+    font-weight: 400;
+}
 .bold_5 {
     font-weight: 500;
 }
@@ -45,7 +48,7 @@ body{
 
 .copy_btn {
     padding: 5px 10px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     border: 0px;
     border-radius: 5px;
     background: rgb(206, 206, 206);

@@ -12,11 +12,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
-    <link href="asset/css/basic.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+    <link href="asset/css/basic.css" rel="stylesheet">
 
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=677076f7f85c7003b715ff76ded47403"></script>
 
@@ -60,17 +60,58 @@
 
         <div style="text-align: center;font-weight: 600;">
             <div style="text-align: center;font-size: 1.4rem;margin-bottom: 7px;">신문조 이정임의 장남 재석</div>
-            <div style="text-align: center;font-size: 1.4rem;margin-bottom: 7px;">추현정의 장녀 아현</div>
+            <div style="text-align: center;font-size: 1.4rem;margin-bottom: 7px;">추현정(태순)의 장녀 아현</div>
         </div>
 
         <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
-            <---- 추가 갤러리 ---->
+
+            <div>
+                <div style="margin: 20px 0px 40px;text-align: center;">
+                    <span class="small_subject">Gallery</span>
+                    <p class="large_subject">사진첩</p>
+                </div>
+            </div>
+
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/0325%EA%B9%80%EC%95%84%ED%98%84%EB%8B%9800064.png" style="max-width: 100%; height: auto;">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/0325%EA%B9%80%EC%95%84%ED%98%84%EB%8B%9800400.png" style="max-width: 100%; height: auto;">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/YW1_1228.png" style="max-width: 100%; height: auto;">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/0325%EA%B9%80%EC%95%84%ED%98%84%EB%8B%9805485.png" style="max-width: 100%; height: auto;">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/0325%EA%B9%80%EC%95%84%ED%98%84%EB%8B%9802152.png" style="max-width: 100%; height: auto;">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__container">
+                                <img src="https://gw.joohong.work/img/20220510_212112680.jpg" style="max-width: 100%; height: auto; margin-top:150px;">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
-            <---- 달력 ---->
-
-            <div id='calendar'></div>
+            <img src="https://gw.joohong.work/img/calendar.png" style="max-width: 100%; height: auto;">
         </div>
 
         <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
@@ -92,12 +133,12 @@
             <p class="map">대구 수성구 동대구로 27</p>
             <br>
             <p class="map bold_6">- 대중 교통 및 주차 안내 -</p>
-            <p class="map bold_5">- 대중 교통 -</p>
-            <p class="map bold_5">지상철 3호선 수성못(TBC)역 하차 (도보 1분이내)</p>
-            <p class="map bold_5">버스 TBC 방송국 앞(아리아나 쪽) : 수성1-1, 수성3-1, 814, 204</p>
-            <p class="map bold_5">- 주차 -</p>
-            <p class="map bold_5">호텔 건물 내 주차장 1~4층 이용</p>
-            <p class="map bold_5">건물 주변 외부주차장 '룰루랄라' 이용</p>
+            <p class="bold_4">- 대중 교통 -</p>
+            <p class="bold_4">지상철 3호선 수성못(TBC)역 하차 (도보 1분이내)</p>
+            <p class="bold_4">버스 TBC 방송국 앞(아리아나 쪽) : 수성1-1, 수성3-1, 814, 204</p>
+            <p class="bold_4">- 주차 -</p>
+            <p class="bold_4">호텔 건물 내 주차장 1~4층 이용</p>
+            <p class="bold_4">건물 주변 외부주차장 '룰루랄라' 이용</p>
         </div>
 
         <div style="margin: 50px 10% 100px;">
@@ -112,15 +153,13 @@
             <div style="width: 100%;display: flex;-webkit-box-pack: center;justify-content: center;-webkit-box-align: center;align-items: center;">
                 <button class="account_btn">계좌번호 확인하기</button>
             </div>
-
-
         </div>
 
         <div class="footer">재석 ♥ 아현 all rights reserved</div>
 
 
     <div class="modal inmodal fade" id="modal_1" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-lg" style="margin-top:70px;">
+        <div class="modal-dialog modal-lg" style="margin-top:60px;">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="bank-slide">
@@ -140,7 +179,7 @@
                         <div style="margin-top: 20px;margin-bottom: 5px;">신부측</div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;">농협 3521008598363 (추현정(태순))</p>-->
-                            <input type="text" id="account_3" value="농협 3521008598363 (추현정(태순))" style="width: 200px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_3" value="농협 3521008598363 (추현정)" style="width: 200px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" onclick="copy_to_clipboard('account_3')">복사하기</button>
                         </div>
                         <div class="bank">
@@ -194,17 +233,8 @@
     // 지도에 마커를 표시합니다
     marker.setMap(map);
 </script>
-
 <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth'
-        });
-        calendar.render();
-    });
-
+    new Splide( '.splide' ).mount();
 </script>
 </body>
 </html>
