@@ -27,15 +27,15 @@
     <div style="position: fixed;z-index: 9999;top: 0px;width: 100%;max-width: 460px;">
         <div class="row col-lg-12 menu_bar">
             <div class="col-lg-4 nav">
-                <span>재석 ♥ 아현</span>
+                <span><a href="#">재석 ♥ 아현</a></span>
             </div>
             <div class="css-1mzjumz">|</div>
             <div class="col-lg-4 nav">
-                <span>갤러리</span>
+                <span><a href="#move_2">사진첩</a></span>
             </div>
             <div class="css-1mzjumz">|</div>
             <div class="col-lg-4 nav">
-                <span>오시는길</span>
+                <span><a href="#move_3">오시는길</a></span>
             </div>
         </div>
         </div>
@@ -66,7 +66,7 @@
 
         <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
 
-            <div>
+            <div id="move_2">
                 <div style="margin: 20px 0px 20px;text-align: center;">
                     <span class="small_subject">Gallery</span>
                     <p class="large_subject">사진첩</p>
@@ -155,7 +155,7 @@
             <img src="https://gw.joohong.work/img/calendar.png" style="max-width: 100%; height: auto;">
         </div>
 
-        <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
+        <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;" id="move_3">
             <span class="small_subject">Contact Info</span>
             <p class="large_subject">오시는 길</p>
         </div>
@@ -163,7 +163,7 @@
         <!--  map  -->
         <div style="text-align: center;margin-bottom: 40px;">
             <div id="map" style="border-radius: 1rem;width: 300px;height: 200px;margin: 0px auto;"></div>
-            <span style="font-size: 0.7rem;color: rgb(102, 102, 102);">지도를 클릭하시면 카카오 맵으로 연결됩니다</span>
+            <!--<span style="font-size: 0.7rem;color: rgb(102, 102, 102);">지도를 클릭하시면 카카오 맵으로 연결됩니다</span>-->
         </div>
 
         <div style="text-align: center;margin-top: 50px;margin-bottom: 20px;">
@@ -255,6 +255,14 @@
         console.log('Copied!');
         alert('복사되었습니다.');
     }
+
+    $(".scroll_move").click(function(event){
+
+        event.preventDefault();
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+    });
 </script>
 
 <script>

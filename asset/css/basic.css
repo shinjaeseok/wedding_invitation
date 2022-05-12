@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family:Cafe24Oneprettynight; font-size: 14px;
     line-height: 1.42857143;
@@ -118,4 +122,21 @@ body{
     display: inline-block;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+a {
+    text-decoration-line: none;
+    color : #333;
+}
+a:link {
+    text-decoration-line: none;
+    color : #333;
+}
+a:visited {
+    color : #333;
+}
+a:hover {
+    color : #333;
+}
+a:active {
+    color : #333;
 }
