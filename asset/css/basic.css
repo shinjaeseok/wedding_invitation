@@ -112,7 +112,7 @@ body{
     z-index: 9999;
 }
 .map {
-    font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.3rem;color: rgb(32, 33, 33);
+    font-weight: 700;text-align: center;margin-bottom: 10px;font-size: 1.5rem;color: rgb(32, 33, 33);
 }
 
 .account_btn {
