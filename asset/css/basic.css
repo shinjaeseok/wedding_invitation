@@ -10,7 +10,8 @@ html {
 }
 
 body{
-    font-family:Cafe24Oneprettynight; font-size: 14px;
+    font-family:Cafe24Oneprettynight;
+    font-size: 15px;
     line-height: 1.42857143;
     color: #333;
 }
@@ -26,7 +27,7 @@ body{
 }
 .nav {
     width: 21%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 5px 10px;
     padding: 5px 1px;
     background: rgba(200, 200, 200, 0);
