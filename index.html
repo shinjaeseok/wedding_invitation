@@ -22,7 +22,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=677076f7f85c7003b715ff76ded47403"></script>
 
 </head>
-<body>
+<body oncontextmenu="return false" ondragstart="return false">
 <div style="margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;color: #202121;vertical-align: baseline;">
     <div style="position: fixed;z-index: 9999;top: 0px;width: 100%;max-width: 460px;">
         <div class="row col-lg-12 menu_bar">
@@ -60,8 +60,8 @@
         </div>
 
         <div style="text-align: center;font-weight: 600;">
-            <div style="text-align: center;font-size: 1.4rem;margin-bottom: 7px;">신문조 이정임의 장남 재석</div>
-            <div style="text-align: center;font-size: 1.4rem;margin-bottom: 7px;">추현정(태순)의 장녀 아현</div>
+            <div style="text-align: center;font-size: 1.7rem;margin-bottom: 7px;">신문조 이정임의 장남 재석</div>
+            <div style="text-align: center;font-size: 1.7rem;margin-bottom: 7px;">추현정(태순)의 장녀 아현</div>
         </div>
 
         <div style="margin-bottom: 20px;" id="move_2">&nbsp</div>
@@ -188,10 +188,11 @@
                 <span class="small_subject">Give Love</span>
                 <p class="large_subject">마음 전하실 곳</p>
             </div>
-            <div style="margin-top: 20px;text-align: center;font-size: 100%;margin-bottom: 40px;">
-                <p>축하해주시는 마음만으로 큰 기쁨입니다</p>
-                <p>어려운 시기에 축복해 주셔서</p>
-                <p>감사합니다.</p></div>
+            <!--<div style="margin-top: 20px;text-align: center;font-size: 100%;margin-bottom: 40px;">-->
+            <!--    <p>축하해주시는 마음만으로 큰 기쁨입니다</p>-->
+            <!--    <p>어려운 시기에 축복해 주셔서</p>-->
+            <!--    <p>감사합니다.</p>-->
+            <!--</div>-->
             <div style="width: 100%;display: flex;-webkit-box-pack: center;justify-content: center;-webkit-box-align: center;align-items: center;">
                 <button class="account_btn">계좌번호 확인하기</button>
             </div>
@@ -209,29 +210,29 @@
                         <div style="margin-bottom: 10px;">신랑측</div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;">농협 70206152046666 (신문조)</p>-->
-                            <input type="text" id="account_1" value="농협 70206152046666 (신문조)" style="width: 210px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_1" value="농협 70206152046666 (신문조)" style="width: 235px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" style="font-size: 1.3rem;" onclick="copy_to_clipboard('account_1')">복사하기</button>
                         </div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;">농협 70206152046666 (신문조)</p>-->
-                            <input type="text" id="account_5" value="농협 70206152046666 (이정임)" style="width: 210px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_5" value="하나은행 41889017017707 (이정임)" style="width: 235px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" style="font-size: 1.3rem;" onclick="copy_to_clipboard('account_5')">복사하기</button>
                         </div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;" id="text_1">국민은행 62970204087215 (신재석)</p>-->
-                            <input type="text" id="account_2" value="국민은행 62970204087215 (신재석)" style="width: 210px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_2" value="국민은행 629702-04-087215 (신재석)" style="width: 235px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" style="font-size: 1.3rem;" onclick="copy_to_clipboard('account_2')">복사하기</button>
                         </div>
 
                         <div style="margin-top: 20px;margin-bottom: 5px;">신부측</div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;">농협 3521008598363 (추현정(태순))</p>-->
-                            <input type="text" id="account_3" value="농협 3521008598363 (추현정)" style="width: 210px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_3" value="농협 352-1008-5983-63 (추현정)" style="width: 235px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" style="font-size: 1.3rem;" onclick="copy_to_clipboard('account_3')">복사하기</button>
                         </div>
                         <div class="bank">
                             <!--<p style="margin: 5px 0 0 5px;">하나은행 14991019584907 (김아현)</p>-->
-                            <input type="text" id="account_4" value="하나은행 14991019584907 (김아현)" style="width: 210px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
+                            <input type="text" id="account_4" value="하나은행 14991019584907 (김아현)" style="width: 235px; border: rgb(245, 245, 245); background: rgb(245, 245, 245);" readonly>
                             <button class="copy_btn" style="font-size: 1.3rem;" onclick="copy_to_clipboard('account_4')">복사하기</button>
                         </div>
                         
