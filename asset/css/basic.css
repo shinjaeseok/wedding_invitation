@@ -107,7 +107,6 @@ body{
     color: rgb(136, 136, 136);
     text-align: center;
     position: fixed;
-    max-width: 460px;
     bottom: 15px;
     z-index: 9999;
 }
